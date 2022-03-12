@@ -1,0 +1,98 @@
+/* TEMA 1 - Selectores de clase
+Una clase es básicamente un nombre que nosotros creamos y  le asignamos a ciertos elementos*/
+.lista-1 {
+    color: rgb(244, 189, 252);
+}
+h1{
+    font-size: 50px;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: khaki;
+}
+h2 {
+    /* TEMA 2 -Vamos a cambiar la fuente*/
+    font-size: 35px;
+    /*Font-size = tamaño de la letra
+    px = pixels*/
+    font-family: 'Hubballi', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+h3 {
+    font-size: 30px;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Open Sans', 
+}
+/* TEMA 3 - para aplicar un estilo a varios elementos, de una manera concisa, la guiá de estilo de google recomienda escribirlas en líneas separadas. */
+p,
+ul,
+ol {
+    font-size: 20px;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Open Sans',  sans-serif;
+}
+li {
+    color: rgb(252, 250, 165);
+    font-size: 20px;
+    /* TEMA 4 - Familias tipográficas*/
+    font-family: 'Hubballi', cursive;
+    font-family: 'Open Sans', sans-serif;
+    /* TEMA 5 - La propiedad "font-family" define una,lista o familias de fuentes, con su orden e prioridad, para utilizar en un elemento seleccionado*/
+}
+/* TEMA 6 - GOOGLE FONTS - Google creó una colección de fuentes, visita  https://fonts.google.com/specimen/Open+Sans */
+
+/* TEMA 7  - Especifica cómo Deben degradarse las fuentes
+cUANDO USAMOS GOOGLE FONTS , ESA FUENTE SE DESCARGA DE INTERNET, pero internet puede fallar y el tipo de letra genérico funcionará como un tipo respaldo en caso de no tener internet(estos tipos de fuentes son los que no tienen comillas en font-family).*/
+
+/* TEMA 8  - Cambiar tamaño de las imágenes.*/
+.azureQ {
+    width: 400px;
+    border-radius: 20px;
+    /* TEMA 9 - Agregar bordes*/
+}
+.azure {
+    width: 400px;
+    border-width: 6 px;
+    border-color: cornflowerblue;
+    border-style: dotted;
+    border-radius: 20px;
+}
+.ciclo
+{
+    width: 400px;
+    border-width: 6 px;
+    border-color: cornflowerblue;
+    border-style: solid dotted;
+    /*TEMA 10 - Esquinas redondeadas*/
+    border-radius: 20px;
+
+}
+.logo
+{
+    /*TEMA 11 - Bordes redondeados*/
+    border-radius: 50%;
+    width: 200px;
+}
+/*TEMA 12 - DIV
+contenedor con un propósito general*/
+.lista-2 {
+    background-color: rgb(0, 0, 0);
+    width: 400px;
+    height: 130px;
+}
+/* TEMA 13 - ATRIBUTO ID EN CSS*/
+#Autor {
+    font-size: 19px;
+    color: lightsalmon;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+/* TEMA 14 - PADDING
+Es la distancia entre el borde de un elemento html que normalmente es un cuadrado o un rectángulo y su contenido*/
+#computer {
+    
+    width: 200px;
+    padding: 50px;
+}
+
