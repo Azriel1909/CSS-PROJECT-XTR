@@ -13,6 +13,7 @@ h1{
 h2 {
     /* TEMA 2 -Vamos a cambiar la fuente*/
     font-size: 35px;
+    color: white;
     /*Font-size = tamaño de la letra
     px = pixels*/
     font-family: 'Hubballi', cursive;
@@ -21,7 +22,8 @@ h2 {
 h3 {
     font-size: 30px;
     font-family: 'Hubballi', cursive;
-    font-family: 'Open Sans', 
+    font-family: 'Open Sans',sans-serif;
+    color: white;
 }
 /* TEMA 3 - para aplicar un estilo a varios elementos, de una manera concisa, la guiá de estilo de google recomienda escribirlas en líneas separadas. */
 p,
@@ -30,6 +32,7 @@ ol {
     font-size: 20px;
     font-family: 'Hubballi', cursive;
     font-family: 'Open Sans',  sans-serif;
+    color: white;
 }
 li {
     color: rgb(252, 250, 165);
@@ -76,7 +79,7 @@ cUANDO USAMOS GOOGLE FONTS , ESA FUENTE SE DESCARGA DE INTERNET, pero internet p
 /*TEMA 12 - DIV
 contenedor con un propósito general*/
 .lista-2 {
-    background-color: rgb(0, 0, 0);
+
     width: 400px;
     height: 130px;
 }
@@ -91,8 +94,163 @@ contenedor con un propósito general*/
 /* TEMA 14 - PADDING
 Es la distancia entre el borde de un elemento html que normalmente es un cuadrado o un rectángulo y su contenido*/
 #computer {
-    
+
+    /*TEMA 15 - TIPOS DE BORDES
+
+    TOP - borde superior
+    RIGHT - borde derecho
+    LEFT - borde izquierdo
+    BOTTOM - borde inferior*/
     width: 200px;
-    padding: 50px;
+    border-width: 9px;
+    border-color: rgb(91, 214, 252);
+    border-style: solid;
+    /*
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50 px;*/
+
+    /*TEMA 16 - PADDING EN UNA LÍNEA*/
+    /* padding: 20xp 15px 5px 10 px;*/
+
+    /*TEMA 17 - MARGEN
+    Distancia entre el borde de un elemento y el borde.*/
+    /*margin: 30px;*/
+    /*margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin: 9 px;*/
+
+    /*TEMA 18 - MARGEN EN UNA SOLA LÍNEA*/
+    margin: 29px;
+    padding: 29px;
+    background-color: rgb(255, 255, 255);
+
+
+}
+.VS {
+    font-weight: 30px;
+    margin: 20px;
+}
+.computer-1 {
+
+    width: 350px;
+    height: 450px;
+    border-color: rgb(91, 214, 252);
+    border-style: solid;
+    border-width: 9px;
+}
+/*TEMA 19 - MARGEN VS PADDING*/
+/*TEMA 20 - SELECTORES DE ATRIBUTOS
+Los elementos pueden tener atributos que  proporcionan un nivel de detalle mayor sobre el elemento que delimitan. En css puedes utilizar selectores de atributo para seleccionar elementos definidos con unos atributos determinados.
+Nota3.md*/
+
+img[alt]{
+    /*border-radius: 50%;*/
+    /*Las imágenes con atributos alt cambiarán de acuerdo a los cambios de estilo en css */
+}
+/* Cambiar formato de links
+a [href=""] {
+    color:;
+    --Para quitar formato de decoración (subrayado)---
+    text-decoration: none;
+    font-weigt: bold;
+  }
+*/
+#ContenedorPadre {
+    color: white;
+    padding: 9px;
+    font-size: 20px;
+    background-color: rgb(66, 99, 243);
+    font-family: 'Hubballi', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+/*Separamos clases con un espacio*/
+.Marco {
+    padding: 9px;
+    margin: 9px;
+} 
+.PX {
+    background-color: black;
+    width: 200px;
+}
+.VW {
+    background-color: black;
+    width: 20vw;
+    /*Este se va a expandir, representa el 20% del ancho de la ventana del navegador(Para páginas web responsivas adaptadas a diferentes dispositivos)*/
+}
+.EM {
+    background-color: black;
+    width: 15em;
+    /*Relativa al tamaño de la letra*/
+}
+/*TEMA 21 - APLICAR ESTILO A BODY*/
+body {
+    background-color:rgb(15, 15, 15);
+    /*DEFINIR ESTILOS REPETITIVOS*/
+}
+/*TEMA 22 - PRIORIZAR UN ESTILO SOBRE OTRO*/
+/*Separamos clases con un espacio*/
+.ROSA {
+    color: pink;
+}
+.AZUL
+{
+    color: rgb(87, 87, 245);
+}
+/*Hay prioridad en CSS - la última clase tiene prioridad (la última clase que se encuentre en archivo .css)
+
+* Si asignamos una clase a un elementos , ese estilo tiene prioridad sobre el estilo asignando a todos los elementos de un mismo tipo.*/
+
+/*TEMA 23 - PRIORIDAD DE CLASS VS ID*/
+/*Separamos clases con un espacio
+El id tiene prioridad sobre la clase, porque el ID es más específico. El id tiene mayor prioridad sobre las clases y sobre los selectores de tipo*/
+#texto-1 {
+    color: hotpink;
+}
+.texto-2 {
+    color: mediumspringgreen;
 }
 
+/*TEMA 24 - PRIORIDAD DE LOS ESTILOS EN LÍNEA
+El estilo en línea se prioriza por encima de los ID*/
+#texto-A {
+    color: hotpink;
+}
+.texto-B {
+    color: coral !important;
+    /*Agregar !important le dice al navegador que es muy importante que se asigne este valor a la propiedad sin importar cualquier otro conflicto*/
+}
+/*TEMA 25 - CÓDIGO HEXADECIMALES PARA COLORES - Código en Base 16 para describir los colores
+0-9 números
+A-F Letras
+16 posibles opciones*/
+#HEX {
+    background-color:  #f7ea77;
+    margin: 25PX;
+    color: #2ab8a0;
+    /* 00- Rojo 00-Verde 00-Azul */
+    /*https://www.google.com/search?q=COLOR+PICKER&oq=COLOR+PICKER&aqs=chrome..69i57.3553j0j1&sourceid=chrome&ie=UTF-8*/
+}
+/*TEMA 26 - ABREVIAR CÓDIGOS HEXADECIMALES*/
+/* #00 00 00 = #000
+#FFFFFF = #FFF
+#00FF00 = #00F*
+#ff00ff = f0f/
+/*TEMA 27 - VALORES RGB PARA COLORES
+
+0-255 números
+0 - no hay ese color
+255 - mayor nivel del resultado
+Red Green Blue*/
+#RGB {
+    background-color: rgb(62, 12, 143);
+    margin: 25px;
+    color: rgb(243, 243, 138);
+    /*Dando click en el cuadro de color en vscode podemos elegir el color en RGB
+    RGBA - A = Alpha
+    COmponente para especificar la transparencia del color.*/
+}
+/*TENA 28 - VARIABLES EN CSS*/
