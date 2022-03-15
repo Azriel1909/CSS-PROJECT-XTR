@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link href="style.css" rel="stylesheet">
+  <link href="utilidades.css" rel="stylesheet">
+  <title>KONDOR</title>
+</head>
+  <body>
+    <!--NAVBAR-->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">KONDOR</h1>
+        <nav>
+          <ul>
+            <li> <a href="index.html">INICIO</a> </li>
+            <li> <a href="edu.html">EDUCACIÓN</a> </li>
+            <li> <a href="news.html">NOTICIAS</a> </li>
+            <li> <a href="blog.html">BLOG</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--SHOWCASE-->
+    <section class="showcase">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1 style="font-family:'Source Code Pro', monospace;" >VACUNACIÓN</h1>
+          <p>La vacuna provoca que nuestro sistema inmunitario produzca anticuerpos, es importante que toda la población se vacune a fin de salvar vidas e interrumpir la transmisión del virus.</p>
+          <p>Reciba información personalizada</p>
+          <a href="edu.html" class="btn btn-outline">Más información</a>
+        </div>
+        <div class="showcase-form card">
+          <h1>Registro</h1>
+          <form>
+            <div class="from-control">
+              <input type="text" name="Nombre" placeholder="Nombre" required>
+            </div>
+            <div class="from-control">
+              <input type="text" name="Apellido" placeholder="Apellido" required>
+            </div>
+            <div class="from-control">
+              <input type="email" name="Correo" placeholder="Correo" required>
+            </div>
+            <input type="submit" value="Enviar" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="container">
+        <h3 class="stats-heading text-center my-1">
+          La vacuna es segura y se someten a pruebas rigorosas en ensayos clínicos.</h3>
+        <div class="grid grid-3 text-center my-4">
+          <div>
+            <i class="fas fa-server fa-3x"></i>
+              <h3>22,460,360</h3>
+              <p class="text-secondary">Vacunas aplicadas en el Estado de México</p>
+          </div>
+          <div>
+            <i class="fas fa-upload fa-3x"></i>
+              <h3>13,156,558</h3>
+              <p class="text-secondary">Vacunas aplicadas en CDMX</p>
+          </div>
+          <div>
+            <i class="fas fa-project-diagram fa-3x"></i>
+            <h3>2,588,607</h3>
+            <p class="text-secondary">Personal educativo vacunado</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Vacuna IMG-->
+    <section class="vacuna">
+      <div class="container grid">
+        <img src="vacuna.png" alt="La vacuna es segura">
+        <div class="card">
+          <h3>Todos podemos hacer algo para mitigar y contener la expansión de las enfermedades.</h3>
+        </div>
+        <div class="card">
+          <h3>"Esta pandemia se puede controlar" Dr. Tedros Adhanom</h3>
+        </div>
+      </div>
+    </section>
+    <!--Vacuna 2-->
+
+    <section class="vacuna2 bg-primary my-2 py-2">
+      <div class="container grid">
+        <div class="text center">
+          <h2 class="lg">Medidas de prevención</h2>
+          <p class="lead my-1">
+            + No difundas noticias falsas.<br>+ Acude a un médico sólo en caso de emergencia. <br>+ Acude a la cita de vacunación.
+          </p>
+            <a href="edu.html" class="btn btn-dark">Leer más</a>
+        </div>
+        <img src="vacuna2.jpg" alt="vacuna vs covid19">
+      </div>
+    </section>
+
+    <!--TIPOS DE VACUNAS-->
+    <section class="vacunas">
+      <h2 class="md text-center my-2">
+        Tipos de vacunas
+      </h2>
+      <div class="container flex">
+        <div class="card">
+          <h4>AstraZeneca</h4>
+          <img src="AZ.jpg" alt="AstraZeneca" width="100" height="100">
+        </div>
+        <div class="card">
+          <h4>Pfizer</h4>
+          <img src="PF.png" alt="Pfizer" width="100" height="100">
+        </div>
+        <div class="card">
+          <h4>Cansino</h4>
+          <img src="cansino.jpg" alt="Cansino" width="100" height="100">
+        </div>
+        <div class="card">
+          <h4>SputnikV</h4>
+          <img src="SP.png" alt="SputnikV" width="100" height="100">
+        </div>
+      </div>
+    </section>
+    <!--
+      Footer
+    -->
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-3">
+        <div>
+          <h1>
+            KONDOR
+          </h1>
+          <p>Copyright &copy;2022 <br> by Ximena Toledo</p>
+        </div>
+        <nav>
+          <ul>
+            <li> <a href="index.html">INICIO</a></li>
+            <li> <a href="edu.html">EDUCACIÓN</a></li>
+            <li> <a href="news.html">NOTICIAS</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="https://github.com/Azriel1909" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github fa-2x"></i> </a>
+          <a href="#"> <i class="fab fa-facebook fa-2x"></i> </a>
+          <a href="#"> <i class="fab fa-instagram fa-2x"></i> </a>
+          <a href="#"> <i class="fab fa-twitter fa-2x"></i> </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

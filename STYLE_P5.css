@@ -1,7 +1,3 @@
-:root {
-  --pinguino-barriga: pink;
-}
-
 h1 {
   font-size: 50px;
   color: black;
@@ -192,5 +188,10 @@ Si no se asigna un valor a una variable en un elemento dado, se usará el valor 
 BODY - Elemento principal
 div de clase  pinguino es descendiente de body.
 ¿Cómo lograr que una variable se reconozca en body?
+usar body como selector de tipo y 
 speudoclase root  y de esta manera la variable será global*/
+
+/*TEMA 31 - CAMBIAR VARIABLE PARA UN ÁREA ESPECÍFICA
+Definir la variable en el elemento con una clase especifica y la herencia de esa valor esta determinada por esa estructura de html*/
+
 

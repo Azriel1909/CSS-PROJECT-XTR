@@ -1,0 +1,202 @@
+:root {
+    --primary-color:#004fa0;
+    --secondary-color:rgb(6, 119, 224);
+    --dark-color:rgb(0, 45, 87);
+    --lg-color:rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 400;
+    line-height: 1.0;
+    margin: 10px;
+}
+.logo {
+    font-size: 30px;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Ubuntu Mono', monospace; 
+}
+
+p {
+    margin: 13px 0;
+
+}
+
+img {
+    width: 100%;
+
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+
+.navbar a {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px white solid;
+}
+
+
+/*Algunas utilidades tipo card -->utilidades.css*/ 
+
+
+.navbar .flex {
+    justify-content: space-between;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Ubuntu Mono', monospace;
+    color: rgb(0, 0, 0);
+    line-height: 1.9;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*SHOWCASE*/
+.showcase {
+    height: 500px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 50px;
+}
+.showcase p {
+    margin: 20px 0;
+}
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 400px;
+    width: 450px;
+    padding: 20px;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .from-control {
+    margin: 30px;
+
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+    padding: 1px;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.showcase-form input:focus{
+    outline: none;
+}
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transform: skewY(-3deg);
+}
+/*STATS*/
+
+.stats {
+    padding-top: 100px;
+}
+.stats-heading {
+    margin: auto;
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+
+.stats .grid h3 {
+    font-size: 35px;
+
+}
+.stats .grid p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*VACUNA*/
+.vacuna .grid {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    font-size: 20px;
+}
+.vacuna .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/*VACUNA 2*/
+.vacuna2 .grid {
+    grid-template-columns: 4fr 3fr;
+
+
+}
+/*TIPOS DE VACUNAS*/
+.vacunas .flex {
+    flex-wrap: wrap;
+}
+
+.vacunas .card{
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+
+}
+.vacunas .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.vacunas .card:hover {
+    transform: translateY(-15px);
+}
+.footer {
+    align-items: center;
+}
